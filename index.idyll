@@ -27,32 +27,36 @@ Briefly explained, Benford's Law maintains that the numeral 1 will be the leadin
 
 
 [VerticalBar/]
+
 Percentage of time dights 1 through 9 are expected to occur in the first position
-[ClickEvents1/]
+
+
+
+[ClickEvents1 style:`{width:"50%"}`/]
+
+
+
 [ClickEvents/]
 
 
-[Scroller currentStep:scrollerIndex]
-  [Graphic style:`{padding: 50}`]
-     [ClickEvents1/]
+
+
+// Second Scroller
+[var name:"circleStep" value:0 /]
+[Scroller currentStep:circleStep]
+  [Graphic]
+    [stackScr   className:`circleStep === 0 ? "circle" : 
+                "circle enlarge" + circleStep `/]
   [/Graphic]
 
+  [Step]
+    ...
+  [/Step]
+  [Step]
+  
+  [/Step]
   [Step]## Hey, neat, here's some data![/Step]
   [Step]## ...   [/Step]
   [Step]## ...  What's that more data?![/Step]
   [Step]## data[/Step]
-
-[/Scroller]
-
-[Scroller currentStep:scrollerIndex]
-  [Graphic   _width: 300
-  _height: 300 style:`{padding: 50}`]
-     [ClickEvents/]
-  [/Graphic]
-
-  [Step]## Hey, neat, here's some datsdfsdfsdfsda![/Step]
-  [Step]## ..fsdf.   [/Step]
-  [Step]## ...sdfsdf  What's that more data?![/Step]
-  [Step]## datadsfds[/Step]
-
 [/Scroller]

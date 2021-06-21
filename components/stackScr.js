@@ -76,7 +76,7 @@ const options = {
 
 const data = genData();
 
-const ClickEvents1 = () => {
+const stackScr = () => {
   
   const getDatasetAtEvent = dataset => {
     if (!dataset.length) return;
@@ -108,7 +108,7 @@ const ClickEvents1 = () => {
         getDatasetAtEvent={getDatasetAtEvent}
         getElementAtEvent={getElementAtEvent}
         getElementsAtEvent={getElementsAtEvent}
-       
+        height={105}
       />
      
   );
@@ -238,4 +238,4 @@ function randBetween(min, max)
 }
 
 
-module.exports = ClickEvents1;
+module.exports = stackScr;

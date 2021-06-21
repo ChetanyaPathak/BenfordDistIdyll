@@ -1,0 +1,47 @@
+.bar, .circle {
+  margin-left: 42vw;
+  background: transparent;
+  transition: 400ms linear all;
+}
+
+/* Format the graphics */
+.circle {
+  height: 2vh;
+}
+
+.bar {
+  width: 25vw;
+  height: 10vh;
+}
+
+/* Animations */
+.rotate1 {
+  transform: rotate(90deg);
+}
+
+.rotate2 {
+  transform: rotate(210deg);
+}
+
+.enlarge1 {
+  transform: scale(2);
+}
+
+.enlarge2 {
+  transform: scale(2.2);
+}
+
+#idyll-scroll-0 .idyll-scroll-graphic {
+  width: 25vw;
+   height: 25vh;
+ }
+
+/* Change graphic background based on Scroller id */
+#idyll-scroll-0 .idyll-scroll-graphic {
+  background:  #ffffff;
+}
+
+#idyll-scroll-1 .idyll-scroll-graphic {
+  background: #ffffff;
+  background-size: 300px 100px;
+}
