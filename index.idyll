@@ -11,14 +11,23 @@
   color:"#ffffff"
    /]
 
-The story of Benford's Law begins in 1881, when astronomer Simon Newcomb noticed that the page numbers in a book of logarithm tables were worn (or smeared) more toward the front of the book and progressively less worn toward the end of the book. Where others would simply dismiss the worn page numbers, Newcomb recognized a distinct pattern related to the occurrence of lower versus higher numbers. He published an article explaining his observations and postulated that the probability of a single number n being the first digit of a number was equal to log(n+1) − log(n). Fifty-seven years later, in 1938, physicist Frank Benford tested Newcomb's hypothesis against 20 sets of data and published a scholarly paper verifying the law. Despite Newcomb's groundwork, Benford has garnered much of the credit for the discovery now commonly referred to as Benford's Law.
+The story of Benford's Law begins in 1881, when astronomer Simon Newcomb noticed that the page numbers in a book of logarithm tables were worn (or smeared) more toward the front of the book and progressively less worn toward the end of the book. 
 
-The application of Benford's Law to spot signs of accounting fraud grew out of an article published in 1972 by economist Hal Varian, who wrote that Benford's Law might be used to detect the possibility of fraud in socioeconomic data submitted in support of various public planning decisions. Varian's general idea was that a simple comparison of first-digit frequency distributions ought to reveal anomalous results (if any), per Benford's Law. In 1999, a JofA article ("I've Got Your Number," May 1999), written by Mark J. Nigrini introduced how forensic accountants and auditors could apply Benford's Law to search for indicators of potential accounting and expenses fraud.
 
-Benford attempted to explain his law by saying that "it's easier to own one acre than nine acres," implying (perhaps) that when people purchase land, it is reasonable to assume that more people purchase one acre as a starting point, rather than nine acres as their starting point.
+Where others would simply dismiss the worn page numbers, Newcomb recognized a distinct pattern related to the occurrence of lower versus higher numbers. Fifty-seven years later, in 1938, physicist Frank Benford tested Newcomb's hypothesis against 20 sets of data and published a scholarly paper verifying the law.
+
+
+#So what is Benford's law?
+
+Briefly explained, Benford's Law maintains that the numeral 1 will be the leading digit in a genuine data set of numbers 30.1% of the time; the numeral 2 will be the leading digit 17.6% of the time; and each subsequent numeral, 3 through 9, will be the leading digit with decreasing frequency. This expected occurrence of leading digits can be illustrated as shown in the chart "Benford's Law."
+
+
+
+
+
 
 [VerticalBar/]
-
+Percentage of time dights 1 through 9 are expected to occur in the first position
 [ClickEvents1/]
 [ClickEvents/]
 
