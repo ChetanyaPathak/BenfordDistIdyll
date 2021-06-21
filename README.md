@@ -1,6 +1,6 @@
 # idyll-post
 
-Template for a single Idyll post.
+Idyll post for Benford Distribution implementation and expalaination
 
 ## Installation
 
