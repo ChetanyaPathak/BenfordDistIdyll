@@ -1,0 +1,45 @@
+[meta title:"Benford Distro" description:"Visualization of Benford Distribution using Idyll" /]
+
+[Header
+  fullWidth:true
+  title:"Benford's Distribution"
+  subtitle:"Surprising Order in the Universe's Chaos"
+  author:"Chaitanya Pathak"
+  authorLink:"https://chetanyapathak.tech"
+  date:"Jun 18, 2021"
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+
+
+[VerticalBar/]
+
+[ClickEvents1/]
+[ClickEvents/]
+
+
+[Scroller currentStep:scrollerIndex]
+  [Graphic style:`{padding: 50}`]
+     [ClickEvents1/]
+  [/Graphic]
+
+  [Step]## Hey, neat, here's some data![/Step]
+  [Step]## ...   [/Step]
+  [Step]## ...  What's that more data?![/Step]
+  [Step]## data[/Step]
+
+[/Scroller]
+
+[Scroller currentStep:scrollerIndex]
+  [Graphic   _width: 300
+  _height: 300 style:`{padding: 50}`]
+     [ClickEvents/]
+  [/Graphic]
+
+  [Step]## Hey, neat, here's some datsdfsdfsdfsda![/Step]
+  [Step]## ..fsdf.   [/Step]
+  [Step]## ...sdfsdf  What's that more data?![/Step]
+  [Step]## datadsfds[/Step]
+
+[/Scroller]

@@ -1,0 +1,29 @@
+{
+  "name": "benford's-law",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "theme": "default",
+    "layout": "centered",
+    "css": "styles.css",
+    "authorView": false
+  },
+  "scripts": {
+    "start": "idyll",
+    "build": "idyll build",
+    "publish": "idyll publish"
+  },
+  "dependencies": {
+    "chart.js": "^3.3.2",
+    "d3": "^4.0.0",
+    "idyll": "^5.0.0",
+    "idyll-d3-component": "^2.0.0",
+    "react": "^17.0.2",
+    "react-chart-histogram": "^0.2.4",
+    "react-chartjs-2": "^3.0.3",
+    "react-minimal-pie-chart": "^8.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
