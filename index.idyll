@@ -10,38 +10,52 @@
   background:"#222222"
   color:"#ffffff"
    /]
+#Introduction
 
 The story of Benford's Law begins in 1881, when astronomer Simon Newcomb noticed that the page numbers in a book of logarithm tables were worn (or smeared) more toward the front of the book and progressively less worn toward the end of the book. 
 
 
 Where others would simply dismiss the worn page numbers, Newcomb recognized a distinct pattern related to the occurrence of lower versus higher numbers. Fifty-seven years later, in 1938, physicist Frank Benford tested Newcomb's hypothesis against 20 sets of data and published a scholarly paper verifying the law.
-
+[br /]
 
 #So what is Benford's law?
 
-Briefly explained, Benford's Law maintains that the numeral 1 will be the leading digit in a genuine data set of numbers 30.1% of the time; the numeral 2 will be the leading digit 17.6% of the time; and each subsequent numeral, 3 through 9, will be the leading digit with decreasing frequency. This expected occurrence of leading digits can be illustrated as shown in the chart "Benford's Law."
+Briefly explained, Benford's Law maintains that the numeral 1 will be the leading digit in a genuine data set of numbers 30.1% of the time; the numeral 2 will be the leading digit 17.6% of the time; and each subsequent numeral, 3 through 9, will be the leading digit with decreasing frequency.
+
+ This expected occurrence of leading digits can be illustrated as shown in the chart "Benford's Law."
 
 
-
+[br /]
 
 
 
 [VerticalBar/]
 
-Percentage of time dights 1 through 9 are expected to occur in the first position
+
+*Percentage of time dights 1 through 9 are expected to occur in the first position*
+
+[br /][br /]
+# Implementing Benford's  Distribution in Idyll
+[br /]
+We have selected a thousand or so numbers randomly to verify Benford's law.
+The random number generation and the logic for Benfords distribution are implemented in Javascript.
+React charts are used for Benford graphs.
 
 
+Below is the output for multiple such instances.
 
-[ClickEvents1 style:`{width:"50%"}`/]
-
+[br /][br /]
 
 
 [ClickEvents/]
 
 
+[br /]
+[br /]
 
-
-// Second Scroller
+[ClickEvents1/]
+[br/]
+#How to implement Benford's law and why is it so special?
 [var name:"circleStep" value:0 /]
 [Scroller currentStep:circleStep]
   [Graphic]
@@ -50,13 +64,36 @@ Percentage of time dights 1 through 9 are expected to occur in the first positio
   [/Graphic]
 
   [Step]
-    ...
+ ##To implement Benfords law the first step is to extract first (leftmost) digit  of each population number. Make sure you NEVER extract a zero
   [/Step]
   [Step]
-  
+  ##Now count the occurrence of each number 1 through 9 in respective buckets. And calculate the percentage of occurrence for each of them with respect to the total number.
   [/Step]
-  [Step]## Hey, neat, here's some data![/Step]
-  [Step]## ...   [/Step]
-  [Step]## ...  What's that more data?![/Step]
-  [Step]## data[/Step]
+  [Step]##Now plot these percentages for each number and compare them to Benfords distribution. If they they have a similar graph, then you can say that the dataset follows Benford's law.[/Step]
+  [Step]###This phenomenon occurs generally in many different instances of real-world data. It becomes more pronounced and more likely when more data is combined together from different sources. It is difficult for humans to manually construct distributions that satisfy Benford's law. Fraudulent numerical data can often be identified by simply looking at the frequency of first digits, although often in practice more than one digit is used for a more precise check.  [/Step]
+  [Step]##Scientists have even begun to use versions of the law to detect potential fraud in published data (tax returns, election results) that are expected to satisfy the law. [/Step]
+  [Step]## More implementations of Benfords law of different datasets  [a href:"https://testingbenfordslaw.com"]can be found here[/a][/Step]
 [/Scroller]
+[br /]
+## More explaination on Benford's law on Numberphile
+
+[Youtube
+  id:"XXjlR2OK1kM"
+  play:false
+  audio:true
+  width:600
+  height:350
+  options:`{ controls: 1 }`
+  /]
+
+
+[br/]
+
+#### Helpful xkcd to recover from chart addiction
+
+
+
+[img
+  src:'https://imgs.xkcd.com/comics/coronavirus_charts.png'
+  
+/]
